@@ -1,0 +1,55 @@
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: "Source Sans", sans-serif !default;
+
+// colors
+$body-bg: #FFFFFF !default;
+$body-color: #093453 !default;
+$link-color: #009ED1 !default;
+$selection-bg: #26351c !default;
+
+
+// scss-docs-start offcanvas-variables
+$modal-content-border-color: #E1B424 !default;
+
+// headings
+$presentation-heading-font: "Source Sans", sans-serif !default;
+$presentation-heading-color: #D13138 !default;
+
+/*-- scss:rules --*/
+
+.slide-background-content{
+  background-image: "./bars.svg";
+  background-size: 100% 100%;
+}
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+.reveal .bar-red {
+  width: 100%;
+  margin-left: 0px;
+  height: 71px;
+  background: #D13138;
+  margin-top: 81px;
+  padding: 0px;
+}
+
+.reveal .bar-blue {
+  width: 100%;
+  margin-left: 0px;
+  height: 20px;
+  background: #009ED1;
+  margin-top: 50px;
+  padding: 0px;
+}
+
+#navBar {
+    height: 20px;
+    background: green;
+    margin-top:60px;
+    position:absolute;
+    width:100%;
+}
