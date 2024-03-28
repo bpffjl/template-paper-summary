@@ -5,6 +5,7 @@ date: now
 date-format: long
 format: 
   html:
+    embed-resources: true
     code-fold: true
     toc: true
     fig-width: 8
@@ -37,7 +38,6 @@ library(kableExtra)
 nice <- stamp("March 1, 1999", quiet = TRUE)
 ```
 
-
 ```{r prepare params table}
 params_tbl <- #as_tibble(params)
   tibble(Name = names(params), 
@@ -62,7 +62,11 @@ params_tbl %>%
 
 # Summary
 
-@paper
+<!-- To add citations to bibiliography without directly citing them -->
+---
+nocite: |
+  @uscode_5_chapter_1_subchapter_B_part_470, @uscode_5_chapter_47_research_demonstration
+---
 
 
 # Citation
@@ -70,23 +74,32 @@ params_tbl %>%
 ::: {#refs}
 :::
 
-
 <!-- Suggests from https://dianaribeiro.com/summary-research-paper/ -->
+
 <!-- THREE STEPS TO SUMMARISE A RESEARCH PAPER -->
+
 <!-- 1. SCAN AND EXTRACT THE MAIN POINTS -->
+
 <!-- First things first, so you have to read the paper. But that doesn’t mean you have to read it from start to finish. Start by scanning the article for its main points. -->
 
 <!-- Here’s the essential information to extract from the research paper you have in front of you: -->
 
 <!-- Authors, year, doi -->
+
 <!-- Study question: look in the introduction for a phrase like “the aim of this study was” -->
+
 <!-- Hypothesis tested -->
+
 <!-- Study methods: design, participants, materials, procedure, what was manipulated (independent variables), what was measured (dependent variables), how data were analysed. -->
+
 <!-- Findings: from the results section; fill this before you look at the discussion section, if possible. Write bullet points. -->
+
 <!-- Interpretation: how did the authors interpreted their findings? Use short sentences, in your own words. -->
+
 <!-- After extracting the key information , revisit the article and read it more attentively, to see if you missed something. Add some notes to your summary, but take care to avoid plagiarism. Write notes in your own words. If you can’t do that at this moment, use quotation marks to indicate that your note came straight from the study. You can rewrite it later, when you have a better grasp of the study. -->
 
 <!-- 2. USE A JOURNALISTIC APPROACH FOR THE FIRST DRAFT -->
+
 <!-- Some sources advise you to keep the same structure as the scientific article, but I like to use the journalistic approach of news articles and flush out the more relevant information first, followed by the details. This is more enticing for readers, making them want to continue reading. Yes, I know that your reader may be just you, but I know I have lost myself in some of the things I’ve written, so…keep it interesting, even for a future self 😊. -->
 
 <!-- This is the main information you have to put together: -->
@@ -94,6 +107,7 @@ params_tbl %>%
 <!-- Title of the article: I like to keep the original article title for the summary, because it’s easier to refer back to the original article if I need to. Sometimes I add a second title, just for me, if the article title is too obscure or long. -->
 
 <!-- 1st paragraph: Answer the 5 W’s in 3-4 sentences. -->
+
 <!-- Who? (the authors) -->
 
 <!-- What? (main finding) -->
@@ -105,10 +119,13 @@ params_tbl %>%
 <!-- This should be a standalone paragraph, meaning that the reader should be able to take out the main information even if they just read this paragraph. -->
 
 <!-- Subsequent paragraphs: In 2-3 paragraphs or less, provide context and more information about the research done. If you’re not sure if a detail is important or not, you can include it here and edit it out in the next step. -->
+
 <!-- 3. POLISH THE ROUGH EDGES -->
+
 <!-- In this stage, you’re going to make a quick edit, checking for completeness and accuracy. Make sure you’ve included all the main points without repeating yourself. Double-check all the numbers. Stay focused on the research questions to avoid tangents. Avoid using jargon and the passive voice whenever possible. -->
 
 <!-- FINAL SUMMARY -->
+
 <!-- Using this approach, you’ll end up with a short summary of your article that you can use to craft other types of writing, such as press releases, news articles, social media blurbs, and many others. -->
 
 <!-- The advantages of summarising research articles are that you can better understand what the article is about, and you’ll have a text written by you, so it’s easier to adapt and you avoid unintentional plagiarism. -->
@@ -116,6 +133,5 @@ params_tbl %>%
 <!-- That’s it! My guide to write a research paper summary 😊 -->
 
 <!-- I’ve created a handout with all the information in this blog post plus a fill-in-the-blanks template that you can use to summarise research articles, you can download it using the form below. You’ll be signed up to my mailing list, and receive a weekly roundup of news in the biomedical industry as a bonus! -->
-
 
 <!-- Examples of .bib file entries can be found https://github.com/plk/biblatex/blob/dev/bibtex/bib/biblatex/biblatex-examples.bib and  https://web.mit.edu/rsi/www/pdfs/bibtex-format.pdf and https://www.bibtex.com/format/ -->
